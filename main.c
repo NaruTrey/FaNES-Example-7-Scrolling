@@ -18,7 +18,7 @@ int main(void) {
     unpackNametableRLE(imageRight, NAMETABLE_D);
     onGraphics();
     while(TRUE) {
-        uchar pad = padPush(PAD_PORT_PLAYER_1);
+        uchar pad = padPush(PAD_PORT__1);
         if(pad & PAD_BUTTON_LEFT) --topSpeedHorizontal;
         if(pad & PAD_BUTTON_RIGHT) ++topSpeedHorizontal;
         if(pad & PAD_BUTTON_UP) --topSpeedVertical;
